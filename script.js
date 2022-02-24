@@ -229,9 +229,10 @@ question();
 
 
 /* 
-Ideeën voor extra functionaliteit: 
+Ideeën voor extra functionaliteit / verbeteringen: 
 - Score
 - Timer
 - Score per snaar/positie op de hals.
 - Heatmap van welke tonen vaak goed worden geïdentificeerd. Misschien op basis van tijd?
+- Antwoordknoppen in piano patroon om de muisafstanden te verminderen en voor betere weergave op mobile.
 */
