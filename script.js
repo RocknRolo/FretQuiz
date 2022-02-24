@@ -63,7 +63,6 @@ const LABEL_TEXT_Y_OFFSET = 10;
 const MIN_POS_TESTED = 1;
 const MAX_POS_TESTED = 11;
 
-let clickedButton;
 let correct;
 let score = 0;
 let mistakes = 0;
@@ -198,12 +197,12 @@ function question() {
     correct = semitonesBetween(new Tone("C", 0), new Tone(ranString.natural, ranString.flatSharp + fingerPos)) % 12;
 
     drawToneLabel(fingerPos, stringNum);
+    document.getElementById('buttons').value = -1;
 }
 
 function checkAnswer() {
-    let clickedButton = parseInt(document.getElementById('buttons').value);
-    if (clickedButton != -1) {
-        if (clickedButton == correct) {
+    if (parseInt(document.getElementById('buttons').value) !== -1) {
+        if (document.getElementById('buttons').value == correct) {
             score++;
             ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
             drawFretboard();
@@ -217,7 +216,7 @@ function checkAnswer() {
     }
     document.getElementById('score').textContent = score;
     document.getElementById('mistakes').textContent = mistakes;
-    clickedButton = -1;
+    document.getElementById('buttons').value = -1;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
