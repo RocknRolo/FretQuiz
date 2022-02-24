@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+#header {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#question {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#buttons {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button {
+    font-size: 2.5rem;
+    width: 10%;
+    margin: 10px;
+}
+
+#fretboard {
+    font-family: "courier new", sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
+
+#scoreboard {
+    display: inline-flex;
+    color: white;
+    font-size: 2rem;
+}
+
+#score_label {
+    margin: 10px;
+    color: green;
+}
+
+#score {
+    margin: 10px;
+}
+
+#mistakes_label {
+    margin: 10px;
+    color: red;
+}
+
+#mistakes {
+    margin: 10px;
+}

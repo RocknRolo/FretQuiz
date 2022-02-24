@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FretQuiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="header">FretQuiz</div>
+    <div id="fretboard"></div>
+    <canvas id="canvas"></canvas>
+    <div id="question">Which tone is being displayed on the fretboard?</div>
+    <br>
+    <div id="buttons" value = -1 onclick="checkAnswer()"> <!-- ??? -->
+        <button onclick = "buttons.value = 0">C</button>
+        <button onclick = "buttons.value = 1">C# / Db</button>
+        <button onclick = "buttons.value = 2">D</button>
+        <button onclick = "buttons.value = 3">D# / Eb</button>
+        <button onclick = "buttons.value = 4">E</button>
+        <button onclick = "buttons.value = 5">F</button>
+        <button onclick = "buttons.value = 6">F# / Gb</button>
+        <button onclick = "buttons.value = 7">G</button>
+        <button onclick = "buttons.value = 8">G# / Ab</button>
+        <button onclick = "buttons.value = 9">A</button>
+        <button onclick = "buttons.value = 10">A# / Bb</button>
+        <button onclick = "buttons.value = 11">B</button>
+    </div>
+    <div id="scoreboard">
+        <div id="score_label">Score:</div>
+        <div id="score">0</div>
+        <div id="mistakes_label">Mistakes:</div>
+        <div id="mistakes">0</div>
+    </div>
+</body>
+</html>
