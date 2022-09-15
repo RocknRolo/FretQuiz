@@ -8,6 +8,20 @@ body {
     background-color: #222;
 }
 
+a {
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: yellow;
+}
+
 #header {
     color: white;
     font-size: 4rem;
